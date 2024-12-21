@@ -16,6 +16,12 @@ def tirar_dado(veces):
     cara_5= 0
     cara_6= 0
 
+    if veces == 1:
+        resultado = dame_numero(1, 6)
+        return print(f'Salio la cara {resultado}')
+    if veces == 0:
+        return print('Error: El numero de lanzamientos debe ser mayor a 0.')
+
     for num in range(veces):
         resultado = dame_numero(1, 6)
         if resultado == 1:
