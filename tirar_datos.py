@@ -9,42 +9,42 @@ def calcula_porcentaje(valor, total):
 
 def tirar_dado(veces):
 
-    uno = 0
-    dos= 0
-    tres= 0
-    cuatro= 0
-    cinco= 0
-    seis= 0
+    cara_1 = 0
+    cara_2= 0
+    cara_3= 0
+    cara_4= 0
+    cara_5= 0
+    cara_6= 0
 
     for num in range(veces):
         resultado = dame_numero(1, 6)
         if resultado == 1:
-            uno += 1
+            cara_1 += 1
         if resultado == 2:
-            dos += 1
+            cara_2 += 1
         if resultado == 3:
-            tres += 1
+            cara_3 += 1
         if resultado == 4:
-            cuatro += 1
+            cara_4 += 1
         if resultado == 5:
-            cinco += 1
+            cara_5 += 1
         if resultado == 6:
-            seis += 1
+            cara_6 += 1
         
     print(f"""Las cantidades de repeticiones fueron:
-1 = {uno} 
-2 = {dos}  
-3 = {tres} 
-4 = {cuatro} 
-5 = {cinco} 
-6 = {seis} \n""")
+1 = {cara_1} 
+2 = {cara_2}  
+3 = {cara_3} 
+4 = {cara_4} 
+5 = {cara_5} 
+6 = {cara_6} \n""")
 
     print(f"""Los porcentajes de cada cara fueron:
-El 1 tuvo {calcula_porcentaje(uno, veces)}% de ocurrencia
-El 2 tuvo {calcula_porcentaje(dos, veces)}% de ocurrencia
-El 3 tuvo {calcula_porcentaje(tres, veces)}% de ocurrencia
-El 4 tuvo {calcula_porcentaje(cuatro, veces)}% de ocurrencia
-El 5 tuvo {calcula_porcentaje(cinco, veces)}% de ocurrencia
-El 6 tuvo {calcula_porcentaje(seis, veces)}% de ocurrencia
+El 1 tuvo {calcula_porcentaje(cara_1, veces)}% de ocurrencia
+El 2 tuvo {calcula_porcentaje(cara_2, veces)}% de ocurrencia
+El 3 tuvo {calcula_porcentaje(cara_3, veces)}% de ocurrencia
+El 4 tuvo {calcula_porcentaje(cara_4, veces)}% de ocurrencia
+El 5 tuvo {calcula_porcentaje(cara_5, veces)}% de ocurrencia
+El 6 tuvo {calcula_porcentaje(cara_6, veces)}% de ocurrencia
 """)
 tirar_dado(10)
